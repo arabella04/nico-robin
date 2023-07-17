@@ -383,9 +383,6 @@ nav .fa-solid{
         background-position: center;
         height: 90vh;  /* Make sure the container has a defined height */
     }
-    .container {
-        /* Adjust container styles as needed for mobile layout */
-    }
 
 .header-text{ /*text in first page*/
         margin-top: 50%;
