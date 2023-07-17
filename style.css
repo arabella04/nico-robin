@@ -13,11 +13,14 @@ body {
 }
 
 #header {
-    width: 100%;
+    width: auto;
     height: 100vh;
     background-image: url(images/bg\ transparent.png);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
 }
 
 .container {
@@ -369,15 +372,23 @@ nav .fa-solid{
 }
 @media only screen and (max-width: 600px){
     body {
-        background:  #ffffff;
         color: #ffffff;
+        width: 125%;
     }
-    #header{
-        background-color: white;
-        background-image: url(images/Robin\ wallpaper.png);
+    #header {
+        background-image: url(images/bg\ transparent.png);
+        background-attachment: fixed;
+        background-size: 100% auto; /* Adjust the background size to cover the entire width while maintaining the aspect ratio */
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 90vh;  /* Make sure the container has a defined height */
     }
-    .header-text{
-        margin-top: 90%;
+    .container {
+        /* Adjust container styles as needed for mobile layout */
+    }
+
+.header-text{ /*text in first page*/
+        margin-top: 50%;
         font-size: 20px;
     }
     .header-text h1{
@@ -391,13 +402,13 @@ nav .fa-solid{
     .header-text h1 span {
         color: rgb(186, 13, 230);
         text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* for shadowing*/
-    }
+       }
     nav ul{ 
-        background: #ffffff;
+        background: #b6a7e2;
         position: fixed;
         top: 0;
-        right: -200px;
-        width: 200px;
+        right: 0px;
+        width: 150px;
         height: 500vh;
         padding-top: 100px;
         z-index: 2;
@@ -418,7 +429,7 @@ nav .fa-solid{
         display: block;
         font-size: 25px;
         color: #050101;
-        right: -100px;
+        right: 0px;
       }
       
       nav ul .fa-sharp{
@@ -446,7 +457,7 @@ nav .fa-solid{
       .contact-left, .contact-right{
         flex-basis: 50%;
       }
-    }
+    
     #msg{
         color: #060007;
         margin-top: -50px;
@@ -454,3 +465,4 @@ nav .fa-solid{
         display: block;
         font-weight: bolder;
     }
+}
