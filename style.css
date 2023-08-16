@@ -94,15 +94,27 @@ nav ul li a:hover::after {
 }
 
 
-.header-text p{
-     display: inline-block;
+.header-text p {
+    font-weight: bolder;
+    display: inline-block;
     font-size: 36px;
     background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: rainbow 6s linear infinite;
+    position: relative;
+    animation: moveRainbow 0s linear infinite; /* Adjust animation duration */
 }
+
+@keyframes moveRainbow {
+    0% {
+        background-position: 0% 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
 .header-text h1 {
     font-size: 60px;
     margin-top: 20px;
@@ -312,6 +324,7 @@ nav ul li a:hover::after {
     color: white;
     font-weight: bolder;
     transition: transform 1000ms;
+    background-color: black;
 }
 
 .btn:hover, .btn:focus-visible{
@@ -362,7 +375,7 @@ button.btn.btn2{
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    background-color: transparent;
+    background-color: black;
     font-weight: bolder;
     transition: transform 1000ms;
 }
