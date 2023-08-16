@@ -89,8 +89,20 @@ nav ul li a:hover::after {
 .header-text {
     margin-top: 15%;
     font-size: 30px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
+
+.header-text p{
+     display: inline-block;
+    font-size: 36px;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow 6s linear infinite;
+}
 .header-text h1 {
     font-size: 60px;
     margin-top: 20px;
@@ -244,6 +256,7 @@ nav ul li a:hover::after {
 
 .work img{
     width: 100%;
+    height: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
@@ -283,7 +296,7 @@ nav ul li a:hover::after {
     text-align: center;
 }
 .work:hover img{
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
 .work:hover .layer{
     height:100%
